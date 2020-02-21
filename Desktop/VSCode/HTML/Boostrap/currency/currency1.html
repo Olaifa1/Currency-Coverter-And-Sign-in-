@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Project | Class 2 </title> 
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="currency1.js"></script>
+<style>
+.space {
+ padding: top 100px;
+ padding: bottom 100px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="row space">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  <div class="card">
+  <h2 class="text-center"> Naira Conversion </h2>
+  <div class="card-body">
+  
+  <form name="currencyConversion" method="POST" action="">
+  <div class="input-group">
+	<div class="input-group-prepend">
+    <span class="input-group-text">Select Currency</span>
+  </div>
+    <select class="custom-select" oncharge ="swat" id="currency">
+      <option value="dollar">Dollar</option>
+      <option value="euros">Euros</option>
+      <option value="pounds">Pounds</option>
+      <option value="yen">Japanese Yen</option>
+      <option value="rupees">Indian Rupees</option>
+	  <option value="bitcoin">Bitcoin</option>
+    </select>
+  </div>
+  </br>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Conversion Amount</span>
+  </div>
+  <input type="text" class="form-control" name="amount" id="amount" required>
+</div>
+</br>
+<button type="button" class="btn btn-primary" onclick="currencyconvert()">Convert</button>
+
+<p id="demo" style="color:blue;"></p>
+
+</form>
+
+</div>
+</div>
+</div>
+ <div class="col-md-4"></div>
+</div>
+</div>
+<br>
+<div class="fluid-container">
+
+
+        <div class="row space">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <div class="card">
+        <h2 class="text-center"> Log In </h2>
+        <div class="card-body">
+        
+        <form name="AuthenticationPage" method="POST" action="">
+        
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Username</span>
+        </div>
+        <input type="text" class="form-control" name="Username" id="Username" required>
+      </div>
+      </br>
+      
+      <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Password</span>
+            </div>
+            <input type="password" class="form-control" name="Password" id="Password" required>
+          </div>
+          </br>
+      <button type="button" class="btn btn-primary btn-sm" onclick="Signin()">Signin</button>
+      <button type="reset" class="btn btn-primary btn-sm" onclick="Reset()">Reset</button>
+      <p id="demo1" style="color:red;"></p>
+      
+      </form>
+      
+      </div>
+      </div>
+      </div>
+       <div class="col-md-4"></div>
+      </div>
+      </div>
+</body>
+
+</html>
+<!-- My JS -->
